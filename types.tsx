@@ -8,3 +8,17 @@ export type foodItemStatic = {
 export type foodItemsStatic = {
   items: foodItemStatic[];
 }
+
+export type FoodItem = {
+  id: string,
+  title: string,
+  description?: string,
+  price: string,
+  imageURL: string,
+  calories: string,
+  qty:string,
+  category: string,
+};
+export type FoodItems = {
+  items: FoodItem[]
+};
