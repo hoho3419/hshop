@@ -12,13 +12,13 @@ import { Header } from './components'
 import { AnimatePresence } from 'framer-motion';
 import { ToastContainer } from 'react-toastify'
 import { Routes,Route } from 'react-router-dom'
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   return (
     <AnimatePresence 
-    
     >
-     <ToastContainer />
+     <ToastContainer key={uuidv4()}/>
      {/* 오른쪽 카트와 왼쪽 메세지 해야함 */}
      <div className='w-screen h-auto min-h-[100vh] flex flex-col bg-primary'>
       <Header />
