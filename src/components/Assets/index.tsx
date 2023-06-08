@@ -5,12 +5,13 @@ import ChickenI from "../../img/c3.png";
 import FishI from "../../img/fi3.png";
 import IcreamI from "../../img/i1.png";
 import StrawberryI from "../../img/f5.png";
+import NotFoundI from "../../img/NotFound.svg";
 
 export const Avatar = AvatarI;
 export const bikeDelivery = delivery;
 export const HeroBg = HeroBgI;
-
 export const Chicken = ChickenI;
 export const Fish = FishI;
 export const Icream = IcreamI;
 export const Strawberry = StrawberryI;
+export const NotFoundImg = NotFoundI;
