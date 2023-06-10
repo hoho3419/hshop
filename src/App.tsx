@@ -8,7 +8,7 @@ import {
   Services,
   Signup
 } from './Pages';
-import { Header } from './components'
+import { Header,Footer } from './components'
 import { AnimatePresence } from 'framer-motion';
 import { ToastContainer } from 'react-toastify'
 import { Routes,Route } from 'react-router-dom'
@@ -34,6 +34,7 @@ function App() {
           <Route path='/menu' element={<Menu/>}/>
           <Route path='/services' element={<Services/>}/>
         </Routes>
+        <Footer />
       </main>
      </div>
     </AnimatePresence>
