@@ -1,9 +1,10 @@
 import React from 'react';
+import { MenuSection } from '../../components'
 
 const Menu = () => {
   return (
     <div>
-      Menu
+      <MenuSection />
     </div>
   );
 };
