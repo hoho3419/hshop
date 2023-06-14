@@ -6,6 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { bikeDelivery } from '../../components/Assets';
 
+
 const ProviderAuth = () => {
   return (
     <div className="flex items-center justify-center gap-5  text-center">
@@ -55,3 +56,20 @@ export const ImageBox = () => {
 };
 
 export default ProviderAuth;
+
+export type ValidateValue = (value: string) => boolean;
+
+export const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+export const emailValidate: ValidateValue = (value: string) => {
+  if(value.trim() !== ''){
+    return true;
+  } 
+  return false
+}
+export const passwordValidate: ValidateValue = (value: string) => {
+  if(passwordRegex.test(value)){
+    return true;
+  } 
+  return false
+}
