@@ -1,11 +1,9 @@
-import React from 'react';
-
 const Services = () => {
   return (
     <div>
-      Services
+      <h1>아직 미완성 페이지 입니다!</h1>
     </div>
   );
-};
+}
 
 export default Services;

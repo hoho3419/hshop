@@ -1,11 +1,9 @@
-import React from 'react';
-
 const About = () => {
   return (
     <div>
-      About
+      <h1>아직 미완성 페이지 입니다!</h1>
     </div>
   );
-};
+}
 
 export default About;
