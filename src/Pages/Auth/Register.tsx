@@ -6,12 +6,11 @@ import { toast } from "react-toastify";
 import { useRecoilState } from 'recoil';
 import { userState } from '../../store/recoilState';
 import useInput from '../../hooks/useInput';
-import { EMAILSIGNUP } from '../../firebase';
+import { EMAILSIGNUP,firebaseAddUser } from '../../firebase';
 
 const Register = () => {
   const user = useRecoilState(userState)[0];
   const navigate = useNavigate();
-  console.log(user);
 
   const {
     value: enterdEmail, // 이런식으로 받는 쪽에서 하면 enterdEmail로 retrun 받는 값을 할당 받겠다는 의미이다.
@@ -43,7 +42,9 @@ const Register = () => {
           success: '성공적으로 회원가입이 완료되었습니다. 로그인 해주세요',
           error: '계정 생성에 실패하였습니다. 다시 시도해주세요'
         }
-      ).then(() =>{
+      ).then((userCredential) =>{
+        const user = userCredential.user.providerData[0];
+        firebaseAddUser(user);
         navigate('/login');
       }).catch((error) =>{
         const errorMessage = error.message;
