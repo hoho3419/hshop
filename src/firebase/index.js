@@ -1,4 +1,4 @@
-import { collection, getDocs, query } from 'firebase/firestore';
+import { collection, doc, getDocs, query, setDoc } from 'firebase/firestore';
 import { app, firestore } from '../firebase.config';
 import { 
   getAuth,
@@ -30,6 +30,18 @@ export const firebaseGetUser = async (uid) =>{
   return users.filter((user) => user.uid === uid);
 }
 
-export const firebaseLogout = () => {
-
+// 사용자 로그아웃
+export const firebaseLogout = async () => {
+  await getAuth(app).signOut();
 }
+
+// 회원가입 할때 데이터베이스에 사용자 정보 추가
+export const firebaseAddUser = async (data) => {
+  const user = await firebaseGetUser(data.uid);
+  if(user.length === 0){
+    await setDoc(doc(firestore,'Users',`${data.uid}`),data,{
+      merge: true
+    })
+  }
+}
+
