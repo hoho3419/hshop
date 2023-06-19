@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'
 import { MdShoppingBasket } from 'react-icons/md';
 import { useRecoilState } from 'recoil'
-import { showCartState,showContactFormState } from '../../store/recoilState'; 
+import { showCartState,showContactFormState,cartItemsState } from '../../store/recoilState'; 
 
 const Navigations = () => {
   const setShowCart = useRecoilState(showCartState)[1];
   const setShowContact = useRecoilState(showContactFormState)[1];
-
+  const cartItems = useRecoilState(cartItemsState)[0];
   return (
     <div className='flex items-center gap-8'>
       <motion.ul
@@ -58,7 +58,7 @@ const Navigations = () => {
       >
         <MdShoppingBasket className='text-2xl cursor-pointer'/>
         <div className='absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center cursor-pointer'>
-          0
+          {cartItems.length}
         </div>
       </motion.div>
     </div>
