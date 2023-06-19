@@ -2,7 +2,7 @@ import React,{ useRef,useLayoutEffect } from 'react';
 import { motion } from 'framer-motion';
 import SingleFoodItem from '../FoodItem';
 import { FoodItem } from '../../../types';
-import Loader from '../Loader';
+// import Loader from '../Loader';
 import NotFound from '../NotFound';
 
 const Container = ({ 
@@ -29,16 +29,13 @@ const Container = ({
       initial={{ opacity: 0, x: 200 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 200 }}
-      className={`${className} w-full my-12 flex items-center ${(!items || col) && "justify-center"}   min-h-[200px] gap-4  px-2 ${
+      className={`${className} w-full my-12 flex items-center ${(!items.length || col) && "justify-center"}   min-h-[200px] gap-4  px-2 ${
         !col ? "overflow-x-hidden scrollbar-hidden scroll-smooth" : "overflow-x-hidden flex-wrap"
       }`}
     >
       {items && items.map((item: FoodItem) => (
         <SingleFoodItem key={item.id} item={item} />
       ))}
-      {
-        !items && (!col ? (<Loader progress='데이터를 받아오는 중입니다'/>) : (<NotFound text='데이터를 받아오는 중입니다'/>))
-      }
       {
         items && items.length <= 0 &&  (<NotFound text="데이터를 찾지 못했습니다. "  />)
       }
