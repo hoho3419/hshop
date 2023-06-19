@@ -24,7 +24,7 @@ const CartTotal = ({checkoutState}: {checkoutState:any}) => {
           <p className="text-gray-50 text-base md:text-lg "><span className="text-sm text-red-600">₩</span> {cartTotal.toLocaleString("ko-KR")} 원</p>
         </div>
         <motion.button onClick = {() => checkoutState(true)} whileTap={{scale:0.8}} className='w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg'>
-          결제 하러가기 ₩{cartTotal.toLocaleString("ko-KR")} 원
+          결제 ₩ {cartTotal.toLocaleString("ko-KR")} 원
         </motion.button>
 
     </div>
