@@ -25,6 +25,7 @@ const Header = () => {
             whileHover={{ scale: 1.1 }}
             className='flex items-center gap-2 cursor-pointer'
           >
+            <img src={bikeDelivery} alt="Logo" className="md:w-6 lg:w-8 object-cover" />
             <p className="text-headingColor md:text-lg lg:text-xl font-bold">
               Hshop
             </p>
