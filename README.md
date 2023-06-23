@@ -1,12 +1,12 @@
-# hShop 홈 쇼핑 배달 어플리케이션
+# hShop 홈 쇼핑 배달 어플리케이션📌
 ## STACK USED
 * ReactJS (Typescript) <br>
 * Recoil <br>
 * TailwindCSS <br>
 * Firease <br>
-## Production Start Date
+## Production Start Date📌
 * 2023년 6월 8일 ~
-## Function list
+## Function list📌
 * 회원가입
 * 로그인,로그아웃
 * 구글 로그인
@@ -14,9 +14,9 @@
 * 프로필 변경 (유저 데이터 변경)
 * Menu Filter 기능
 * Google Map API
-## DEMO UR
+## DEMO UR📌
 <a href="hshop-18d5d.web.app">Demo here</a>
-## UI Desktop View
+## UI Desktop View📌
 ![image](https://github.com/hoho3419/hshop/assets/106577276/47959f68-8bdd-494c-95f2-9fb6c439d311)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/287a3e11-dc6b-47a5-a2cd-65af1dec2659)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/b85fab51-5f84-49a5-b899-2668a534eb17)
@@ -27,7 +27,7 @@
 ![image](https://github.com/hoho3419/hshop/assets/106577276/61b197af-09ce-44b5-bba9-9ffce276f4be)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/f5809247-d54b-42ec-a043-d247e5e94807)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/1d7779b6-4346-4b25-8db9-6d2c6b8cc543)
-## UI Mobile View
+## UI Mobile View📌
 ![image](https://github.com/hoho3419/hshop/assets/106577276/a31be1fd-5011-4c02-905d-3ef1c5970e55)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/5ea867e8-ab0e-424d-94e6-e533839f1275)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/d669d52f-39ef-4cf9-9ea2-7e37d51eee7f)
