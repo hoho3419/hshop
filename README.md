@@ -15,7 +15,7 @@
 * Menu Filter 기능
 * Google Map API
 ## DEMO UR📌
-#### <a href="https://hshop-18d5d.firebaseapp.com/">Demo here</a>
+#### <a href="https://hshop-18d5d.firebaseapp.com/" target="_blank">Demo here</a>
 ## UI Desktop View📌
 ![image](https://github.com/hoho3419/hshop/assets/106577276/47959f68-8bdd-494c-95f2-9fb6c439d311)
 ![image](https://github.com/hoho3419/hshop/assets/106577276/287a3e11-dc6b-47a5-a2cd-65af1dec2659)
