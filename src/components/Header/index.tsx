@@ -96,9 +96,10 @@ const Header = () => {
                     className='w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-2xl rounded-t-full cursor-pointer'
                     onClick={() => setIsOpen(!isOpen)}
                   />
-                  <p className="text-headingColor cursor-pointer flex items-center justify-center gap-2">
+                  <div className="text-headingColor cursor-pointer flex items-center justify-center gap-2">
                     <RiArrowDropDownLine />
-                  </p>
+                    {isOpen && <DropDown />}
+                  </div>
                 </motion.div>
               </div>
             ) : (
