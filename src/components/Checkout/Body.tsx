@@ -20,7 +20,7 @@ const Body = ({ action }: { action: any }) => {
     setTimeout(async () => {
       setLoading(false);
       await emptyCart(cartItems,setTotalPrice,setCartItems);
-      toast.success("Order completed successfuly with payment. Thank you for your patronage.", {
+      toast.success("결제가 완료되었습니다. 이용해주셔서 감사합니다.", {
         position: "top-center",
         autoClose: 6000,
       });
