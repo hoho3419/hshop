@@ -30,7 +30,7 @@ const Container = ({
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 200 }}
       className={`${className} w-full my-12 flex items-center ${(!items.length || col) && "justify-center"}   min-h-[200px] gap-4  px-2 ${
-        !col ? "overflow-x-hidden scrollbar-hidden scroll-smooth" : "overflow-x-hidden flex-wrap"
+        !col ? "overflow-x-auto scroll-smooth" : "overflow-x-hidden flex-wrap"
       }`}
     >
       {items && items.map((item: FoodItem) => (
