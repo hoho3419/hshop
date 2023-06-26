@@ -24,7 +24,7 @@ const StaticsImages: React.FC<foodItemsStatic> = ({ items }) => {
             {item.desc}
           </p>
           <p className="text-sm font-semibold text-headingColor">
-            <span className="text-xs text-red-600">₩</span> {item.price}
+            <span className="text-xs text-red-600">₩</span> {(+item.price).toLocaleString("ko-KR")} 원
           </p>
         </div>
       ))}
