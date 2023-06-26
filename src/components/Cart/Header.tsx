@@ -4,12 +4,16 @@ import { MdLogin, MdOutlineKeyboardBackspace } from "react-icons/md";
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from 'framer-motion';
 import { useRecoilState } from 'recoil';
-import { userState,showCartState } from '../../store/recoilState';
-import { Link } from 'react-router-dom'
+import { userState,showCartState, cartItemsState, cartTotalState } from '../../store/recoilState';
+import { Link } from 'react-router-dom';
+import { emptyCart } from '../../utils/functions';
 
 const CartHeader = () => {
   const setShowCart = useRecoilState(showCartState)[1];
   const user = useRecoilState(userState)[0];
+  const [cartItem,setCartItem] = useRecoilState(cartItemsState);
+  const setTotalPrice = useRecoilState(cartTotalState)[1];
+
   return (
     <div className='w-full flex items-center bg-white justify-between px-4 py-2 cursor-pointer'>
       <motion.div
@@ -29,6 +33,7 @@ const CartHeader = () => {
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 0.9 }}
           className="flex items-center justify-center gap-2 p-1 px-2 my-2 bg-cardOverlay rounded-md hover:shadow-sm text-textColor text-base"
+          onClick={() => emptyCart(cartItem,setTotalPrice,setCartItem)}
         >
           clear <BiRefresh className="text-cartNumBg" />
         </motion.p>
