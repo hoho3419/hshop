@@ -2,7 +2,6 @@ import React,{ useRef,useLayoutEffect } from 'react';
 import { motion } from 'framer-motion';
 import SingleFoodItem from '../FoodItem';
 import { FoodItem } from '../../../types';
-// import Loader from '../Loader';
 import NotFound from '../NotFound';
 
 const Container = ({ 

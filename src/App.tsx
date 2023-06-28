@@ -46,7 +46,6 @@ function App() {
 
   return (
     <AnimatePresence >
-     {/* 오른쪽 카트와 왼쪽 메세지 해야함 */}
      <ToastContainer key={uuidv4()}/>
      <div className='w-screen h-auto min-h-[100vh] flex flex-col bg-primary'>
       {showCart && <Cart />}
