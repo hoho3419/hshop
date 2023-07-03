@@ -5,7 +5,7 @@
 * TailwindCSS <br>
 * Firease <br>
 ## Production Start Date📌
-* 2023년 6월 8일 ~
+* 2023년 6월 8일 ~ 2023년 6월 24일 
 ## Function list📌
 * 회원가입
 * 로그인,로그아웃
